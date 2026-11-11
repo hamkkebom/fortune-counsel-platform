@@ -1,0 +1,193 @@
+generator client {
+  provider = "prisma-client"
+  output   = "../src/generated/prisma"
+}
+
+datasource db {
+  provider = "sqlite"
+}
+
+model User {
+  id            String    @id @default(cuid())
+  name          String?
+  email         String?   @unique
+  emailVerified DateTime?
+  image         String?
+  phone         String?
+  nickname      String?
+  coin          Int       @default(0)
+  role          String    @default("USER")
+  createdAt     DateTime  @default(now())
+  updatedAt     DateTime  @updatedAt
+  accounts      Account[]
+  sessions      Session[]
+  consultations Consultation[]
+  reviews       Review[]
+  favorites     Favorite[]
+  chatParticipants ChatParticipant[]
+  messages      ChatMessage[]
+  orders        Order[]
+  reservations  Reservation[]
+  consultant    Consultant?
+}
+
+model Account {
+  id                String  @id @default(cuid())
+  userId            String
+  type              String
+  provider          String
+  providerAccountId String
+  refresh_token     String?
+  access_token      String?
+  expires_at        Int?
+  token_type        String?
+  scope             String?
+  id_token          String?
+  session_state     String?
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+  @@unique([provider, providerAccountId])
+}
+
+model Session {
+  id           String   @id @default(cuid())
+  sessionToken String   @unique
+  userId       String
+  expires      DateTime
+  user         User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+}
+
+model Consultant {
+  id            String   @id @default(cuid())
+  userId        String   @unique
+  name          String
+  nickname      String
+  category      String
+  tier          String   @default("purple")
+  pricePer30s   Int      @default(1000)
+  rating        Float    @default(0)
+  reviewCount   Int      @default(0)
+  consultCount  Int      @default(0)
+  status        String   @default("standby")
+  intro         String?
+  profileImage  String?
+  tags          String?
+  isActive      Boolean  @default(true)
+  createdAt     DateTime @default(now())
+  updatedAt     DateTime @updatedAt
+  user          User           @relation(fields: [userId], references: [id], onDelete: Cascade)
+  consultations Consultation[]
+  reviews       Review[]
+  favorites     Favorite[]
+  reservations  Reservation[]
+}
+
+model Consultation {
+  id           String   @id @default(cuid())
+  userId       String
+  consultantId String
+  type         String
+  status       String   @default("pending")
+  duration     Int      @default(0)
+  cost         Int      @default(0)
+  rating       Float?
+  reviewText   String?
+  createdAt    DateTime @default(now())
+  user       User       @relation(fields: [userId], references: [id], onDelete: Cascade)
+  consultant Consultant @relation(fields: [consultantId], references: [id], onDelete: Cascade)
+}
+
+model Review {
+  id           String   @id @default(cuid())
+  userId       String
+  consultantId String
+  rating       Float
+  content      String
+  tags         String?
+  createdAt    DateTime @default(now())
+  user       User       @relation(fields: [userId], references: [id], onDelete: Cascade)
+  consultant Consultant @relation(fields: [consultantId], references: [id], onDelete: Cascade)
+}
+
+model Favorite {
+  id           String   @id @default(cuid())
+  userId       String
+  consultantId String
+  createdAt    DateTime @default(now())
+  user       User       @relation(fields: [userId], references: [id], onDelete: Cascade)
+  consultant Consultant @relation(fields: [consultantId], references: [id], onDelete: Cascade)
+  @@unique([userId, consultantId])
+}
+
+model ChatRoom {
+  id        String   @id @default(cuid())
+  name      String?
+  isGroup   Boolean  @default(false)
+  createdAt DateTime @default(now())
+  participants ChatParticipant[]
+  messages     ChatMessage[]
+}
+
+model ChatParticipant {
+  id         String   @id @default(cuid())
+  chatRoomId String
+  userId     String
+  joinedAt   DateTime @default(now())
+  chatRoom ChatRoom @relation(fields: [chatRoomId], references: [id], onDelete: Cascade)
+  user     User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  @@unique([chatRoomId, userId])
+}
+
+model ChatMessage {
+  id         String   @id @default(cuid())
+  chatRoomId String
+  userId     String
+  content    String
+  type       String   @default("text")
+  createdAt  DateTime @default(now())
+  chatRoom ChatRoom @relation(fields: [chatRoomId], references: [id], onDelete: Cascade)
+  user     User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+}
+
+model Order {
+  id          String   @id @default(cuid())
+  userId      String
+  amount      Int
+  coinAmount  Int
+  paymentMethod String?
+  status      String   @default("pending")
+  createdAt   DateTime @default(now())
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+}
+
+model Reservation {
+  id           String   @id @default(cuid())
+  userId       String
+  consultantId String
+  date         DateTime
+  status       String   @default("pending")
+  createdAt    DateTime @default(now())
+  user       User       @relation(fields: [userId], references: [id], onDelete: Cascade)
+  consultant Consultant @relation(fields: [consultantId], references: [id], onDelete: Cascade)
+}
+
+model Content {
+  id        String   @id @default(cuid())
+  title     String
+  body      String
+  category  String?
+  imageUrl  String?
+  isActive  Boolean  @default(true)
+  createdAt DateTime @default(now())
+}
+
+model Banner {
+  id          String   @id @default(cuid())
+  title       String?
+  imageUrl    String
+  linkUrl     String?
+  type        String   @default("image")
+  consultantId String?
+  sortOrder   Int      @default(0)
+  isActive    Boolean  @default(true)
+  createdAt   DateTime @default(now())
+}

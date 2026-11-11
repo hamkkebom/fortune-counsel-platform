@@ -1,0 +1,232 @@
+/*
+ * The Typekit service used to deliver this font or fonts for use on websites
+ * is provided by Adobe and is subject to these Terms of Use
+ * http://www.adobe.com/products/eulas/tou_typekit. For font license
+ * information, see the list below.
+ *
+ * finlandica:
+ *   - http://typekit.com/eulas/00000000000000007750f271
+ *   - http://typekit.com/eulas/00000000000000007750f26f
+ * hanken-grotesk:
+ *   - http://typekit.com/eulas/0000000000000000774d1dcc
+ *   - http://typekit.com/eulas/0000000000000000774d1dc7
+ *   - http://typekit.com/eulas/0000000000000000774d1dc3
+ *   - http://typekit.com/eulas/0000000000000000774d1dce
+ *   - http://typekit.com/eulas/0000000000000000774d1dd0
+ *   - http://typekit.com/eulas/0000000000000000774d1dc4
+ *   - http://typekit.com/eulas/0000000000000000774d1dbf
+ *   - http://typekit.com/eulas/0000000000000000774d1dc5
+ *   - http://typekit.com/eulas/0000000000000000774d1dcd
+ *   - http://typekit.com/eulas/0000000000000000774d1dc9
+ *   - http://typekit.com/eulas/0000000000000000774d1dc1
+ *
+ * © 2009-2025 Adobe Systems Incorporated. All Rights Reserved.
+ */
+/*{"last_published":"2025-06-24 06:56:53 UTC"}*/
+
+@import url('https://p.typekit.net/p.css?s=1&k=yvi2rpk&ht=tk&f=54675.54676.54716.54717.54718.54719.54722.54724.54725.54726.54727.54730.54731&a=116731493&app=typekit&e=css');
+
+@font-face {
+  font-family: 'finlandica';
+  src: url('https://use.typekit.net/af/5e9d1e/00000000000000007750f271/31/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3')
+      format('woff2'),
+    url('https://use.typekit.net/af/5e9d1e/00000000000000007750f271/31/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3')
+      format('woff'),
+    url('https://use.typekit.net/af/5e9d1e/00000000000000007750f271/31/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3')
+      format('opentype');
+  font-display: auto;
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: normal;
+}
+
+@font-face {
+  font-family: 'finlandica';
+  src: url('https://use.typekit.net/af/abbbc3/00000000000000007750f26f/31/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3')
+      format('woff2'),
+    url('https://use.typekit.net/af/abbbc3/00000000000000007750f26f/31/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3')
+      format('woff'),
+    url('https://use.typekit.net/af/abbbc3/00000000000000007750f26f/31/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3')
+      format('opentype');
+  font-display: auto;
+  font-style: normal;
+  font-weight: 700;
+  font-stretch: normal;
+}
+
+@font-face {
+  font-family: 'hanken-grotesk';
+  src: url('https://use.typekit.net/af/eb4603/0000000000000000774d1dcc/31/l?subset_id=2&fvd=n1&v=3') format('woff2'),
+    url('https://use.typekit.net/af/eb4603/0000000000000000774d1dcc/31/d?subset_id=2&fvd=n1&v=3') format('woff'),
+    url('https://use.typekit.net/af/eb4603/0000000000000000774d1dcc/31/a?subset_id=2&fvd=n1&v=3') format('opentype');
+  font-display: auto;
+  font-style: normal;
+  font-weight: 100;
+  font-stretch: normal;
+}
+
+@font-face {
+  font-family: 'hanken-grotesk';
+  src: url('https://use.typekit.net/af/644f80/0000000000000000774d1dc7/31/l?subset_id=2&fvd=n8&v=3') format('woff2'),
+    url('https://use.typekit.net/af/644f80/0000000000000000774d1dc7/31/d?subset_id=2&fvd=n8&v=3') format('woff'),
+    url('https://use.typekit.net/af/644f80/0000000000000000774d1dc7/31/a?subset_id=2&fvd=n8&v=3') format('opentype');
+  font-display: auto;
+  font-style: normal;
+  font-weight: 800;
+  font-stretch: normal;
+}
+
+@font-face {
+  font-family: 'hanken-grotesk';
+  src: url('https://use.typekit.net/af/977081/0000000000000000774d1dc3/31/l?subset_id=2&fvd=n9&v=3') format('woff2'),
+    url('https://use.typekit.net/af/977081/0000000000000000774d1dc3/31/d?subset_id=2&fvd=n9&v=3') format('woff'),
+    url('https://use.typekit.net/af/977081/0000000000000000774d1dc3/31/a?subset_id=2&fvd=n9&v=3') format('opentype');
+  font-display: auto;
+  font-style: normal;
+  font-weight: 900;
+  font-stretch: normal;
+}
+
+@font-face {
+  font-family: 'hanken-grotesk';
+  src: url('https://use.typekit.net/af/33c915/0000000000000000774d1dce/31/l?subset_id=2&fvd=n2&v=3') format('woff2'),
+    url('https://use.typekit.net/af/33c915/0000000000000000774d1dce/31/d?subset_id=2&fvd=n2&v=3') format('woff'),
+    url('https://use.typekit.net/af/33c915/0000000000000000774d1dce/31/a?subset_id=2&fvd=n2&v=3') format('opentype');
+  font-display: auto;
+  font-style: normal;
+  font-weight: 200;
+  font-stretch: normal;
+}
+
+@font-face {
+  font-family: 'hanken-grotesk';
+  src: url('https://use.typekit.net/af/6b6958/0000000000000000774d1dd0/31/l?subset_id=2&fvd=n3&v=3') format('woff2'),
+    url('https://use.typekit.net/af/6b6958/0000000000000000774d1dd0/31/d?subset_id=2&fvd=n3&v=3') format('woff'),
+    url('https://use.typekit.net/af/6b6958/0000000000000000774d1dd0/31/a?subset_id=2&fvd=n3&v=3') format('opentype');
+  font-display: auto;
+  font-style: normal;
+  font-weight: 300;
+  font-stretch: normal;
+}
+
+@font-face {
+  font-family: 'hanken-grotesk';
+  src: url('https://use.typekit.net/af/84b8c5/0000000000000000774d1dc4/31/l?subset_id=2&fvd=n6&v=3') format('woff2'),
+    url('https://use.typekit.net/af/84b8c5/0000000000000000774d1dc4/31/d?subset_id=2&fvd=n6&v=3') format('woff'),
+    url('https://use.typekit.net/af/84b8c5/0000000000000000774d1dc4/31/a?subset_id=2&fvd=n6&v=3') format('opentype');
+  font-display: auto;
+  font-style: normal;
+  font-weight: 600;
+  font-stretch: normal;
+}
+
+@font-face {
+  font-family: 'hanken-grotesk';
+  src: url('https://use.typekit.net/af/3a091f/0000000000000000774d1dbf/31/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3')
+      format('woff2'),
+    url('https://use.typekit.net/af/3a091f/0000000000000000774d1dbf/31/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3')
+      format('woff'),
+    url('https://use.typekit.net/af/3a091f/0000000000000000774d1dbf/31/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3')
+      format('opentype');
+  font-display: auto;
+  font-style: normal;
+  font-weight: 700;
+  font-stretch: normal;
+}
+
+@font-face {
+  font-family: 'hanken-grotesk';
+  src: url('https://use.typekit.net/af/24ca1c/0000000000000000774d1dc5/31/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3')
+      format('woff2'),
+    url('https://use.typekit.net/af/24ca1c/0000000000000000774d1dc5/31/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3')
+      format('woff'),
+    url('https://use.typekit.net/af/24ca1c/0000000000000000774d1dc5/31/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3')
+      format('opentype');
+  font-display: auto;
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: normal;
+}
+
+@font-face {
+  font-family: 'hanken-grotesk';
+  src: url('https://use.typekit.net/af/a809bf/0000000000000000774d1dcd/31/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3')
+      format('woff2'),
+    url('https://use.typekit.net/af/a809bf/0000000000000000774d1dcd/31/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3')
+      format('woff'),
+    url('https://use.typekit.net/af/a809bf/0000000000000000774d1dcd/31/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3')
+      format('opentype');
+  font-display: auto;
+  font-style: italic;
+  font-weight: 400;
+  font-stretch: normal;
+}
+
+@font-face {
+  font-family: 'hanken-grotesk';
+  src: url('https://use.typekit.net/af/65e3b0/0000000000000000774d1dc9/31/l?subset_id=2&fvd=n5&v=3') format('woff2'),
+    url('https://use.typekit.net/af/65e3b0/0000000000000000774d1dc9/31/d?subset_id=2&fvd=n5&v=3') format('woff'),
+    url('https://use.typekit.net/af/65e3b0/0000000000000000774d1dc9/31/a?subset_id=2&fvd=n5&v=3') format('opentype');
+  font-display: auto;
+  font-style: normal;
+  font-weight: 500;
+  font-stretch: normal;
+}
+
+@font-face {
+  font-family: 'hanken-grotesk';
+  src: url('https://use.typekit.net/af/01aefb/0000000000000000774d1dc1/31/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3')
+      format('woff2'),
+    url('https://use.typekit.net/af/01aefb/0000000000000000774d1dc1/31/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3')
+      format('woff'),
+    url('https://use.typekit.net/af/01aefb/0000000000000000774d1dc1/31/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3')
+      format('opentype');
+  font-display: auto;
+  font-style: italic;
+  font-weight: 700;
+  font-stretch: normal;
+}
+
+.tk-finlandica {
+  font-family: 'finlandica', sans-serif;
+}
+.tk-hanken-grotesk {
+  font-family: 'hanken-grotesk', sans-serif;
+}
+
+/* Paperlogy-3Light */
+@font-face {
+  font-family: 'Paperlogy';
+  font-weight: 300;
+  src: url('/assets/fonts/Paperlogy-3Light.ttf');
+}
+/* Paperlogy-4Regular */
+@font-face {
+  font-family: 'Paperlogy';
+  font-weight: 400;
+  src: url('/assets/fonts/Paperlogy-4Regular.ttf');
+}
+/* Paperlogy-5Medium */
+@font-face {
+  font-family: 'Paperlogy';
+  font-weight: 500;
+  src: url('/assets/fonts/Paperlogy-5Medium.ttf');
+}
+/* Paperlogy-6SemiBold */
+@font-face {
+  font-family: 'Paperlogy';
+  font-weight: 600;
+  src: url('/assets/fonts/Paperlogy-6SemiBold.ttf');
+}
+/* Paperlogy-7Bold */
+@font-face {
+  font-family: 'Paperlogy';
+  font-weight: 700;
+  src: url('/assets/fonts/Paperlogy-7Bold.ttf');
+}
+/* Paperlogy-8ExtraBold */
+@font-face {
+  font-family: 'Paperlogy';
+  font-weight: 800;
+  src: url('/assets/fonts/Paperlogy-8ExtraBold.ttf');
+}
